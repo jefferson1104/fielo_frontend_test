@@ -1,11 +1,26 @@
-import Header from 'components/Header'
-import Main from 'components/Main'
+import { GetStaticProps } from 'next'
+import { api } from 'utils/api'
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <Main />
-    </>
-  )
+import HomePage from 'templates/Home'
+
+type HomeProps = {
+  image: string
 }
+
+const Home = ({ image }: HomeProps) => {
+  return <HomePage background={image} />
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const bingData = await api.get('/api/bing')
+
+  const image = JSON.stringify(bingData.data.background)
+
+  return {
+    props: {
+      image
+    }
+  }
+}
+
+export default Home

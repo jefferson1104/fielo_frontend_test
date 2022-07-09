@@ -1,8 +1,12 @@
 import * as S from './styles'
 
-const Main = () => {
+type MainProps = {
+  background: string
+}
+
+const Main = ({ background }: MainProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper backgroundUrl={background}>
       <h1>Fielo Test</h1>
     </S.Wrapper>
   )

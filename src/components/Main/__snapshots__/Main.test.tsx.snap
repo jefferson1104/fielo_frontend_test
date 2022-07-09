@@ -21,7 +21,9 @@ exports[`Main component should render the heading 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #ffffff;
+  background: url(https://image.com/example.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 <main
@@ -31,4 +33,4 @@ exports[`Main component should render the heading 1`] = `
     Fielo Test
   </h1>
 </main>
-`;
+`
