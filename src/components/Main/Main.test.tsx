@@ -6,13 +6,21 @@ const mockProps = {
   background: 'https://image.com/example.png'
 }
 
+jest.mock('components/UserList', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock UserList"></div>
+    }
+  }
+})
+
 describe('Main component', () => {
-  it('should render the heading', () => {
+  it('should render it correctly', () => {
     const { container } = render(<Main background={mockProps.background} />)
 
-    expect(
-      screen.getByRole('heading', { name: /Fielo test/i })
-    ).toBeInTheDocument()
+    const userList = screen.getByTestId(/Mock UserList/i)
+    expect(userList).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()
   })

@@ -1,3 +1,5 @@
+import UserList from 'components/UserList'
+
 import * as S from './styles'
 
 type MainProps = {
@@ -7,7 +9,7 @@ type MainProps = {
 const Main = ({ background }: MainProps) => {
   return (
     <S.Wrapper backgroundUrl={background}>
-      <h1>Fielo Test</h1>
+      <UserList users={[]} />
     </S.Wrapper>
   )
 }

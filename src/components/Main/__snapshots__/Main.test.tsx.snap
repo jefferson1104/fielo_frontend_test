@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main component should render the heading 1`] = `
+exports[`Main component should render it correctly 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
@@ -29,8 +29,8 @@ exports[`Main component should render the heading 1`] = `
 <main
   class="c0"
 >
-  <h1>
-    Fielo Test
-  </h1>
+  <div
+    data-testid="Mock UserList"
+  />
 </main>
 `
