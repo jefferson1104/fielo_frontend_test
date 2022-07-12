@@ -5,11 +5,7 @@ type WrapperProps = {
 }
 
 export const Wrapper = styled.main<WrapperProps>`
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  text-align: center;
-
+  height: 100vh;
   background: url(${({ backgroundUrl }) => backgroundUrl});
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +15,8 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
 
+  gap: 22px;
+  padding: 100px 0;
   max-width: 1200px;
 `

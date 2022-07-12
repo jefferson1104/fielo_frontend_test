@@ -1,25 +1,15 @@
-import UserList from 'components/UserList'
-import UserProfile from 'components/UserProfile'
-import UserActivities from 'components/UserActivities'
-
+import { ReactNode } from 'react'
 import * as S from './styles'
-
-import { usersMock } from '../UserList/usersMock'
-import { userMock } from '../UserProfile/userMock'
-import { activitiesMock } from '../UserActivities/activitiesMock'
 
 type MainProps = {
   background: string
+  children: ReactNode
 }
 
-const Main = ({ background }: MainProps) => {
+const Main = ({ background, children }: MainProps) => {
   return (
     <S.Wrapper backgroundUrl={background}>
-      <S.Container>
-        <UserList users={usersMock} />
-        <UserProfile userProfile={userMock} userLevel="Bronze" />
-        <UserActivities userActivities={activitiesMock} />
-      </S.Container>
+      <S.Container>{children}</S.Container>
     </S.Wrapper>
   )
 }

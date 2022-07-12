@@ -30,7 +30,10 @@ const UserList = ({ users }: UsersProps) => {
             <S.List key={user.id}>
               <span>{index + 1}</span>
               <div className="user-info">
-                <img src={user.image} alt={user.name} />
+                <img
+                  src={user.image ? user.image : 'img/avatar_default.png'}
+                  alt={user.name}
+                />
                 <p>{user.name}</p>
               </div>
               <span>{user.balance.points}</span>
