@@ -1,8 +1,6 @@
 import * as S from './styles'
 
-import { usersMock } from './mock'
-
-type UserType = {
+type User = {
   id: string
   name: string
   balance: {
@@ -14,11 +12,10 @@ type UserType = {
 }
 
 export type UsersProps = {
-  users: Array<UserType>
+  users: Array<User>
 }
 
 const UserList = ({ users }: UsersProps) => {
-  console.log(users)
   return (
     <S.Wrapper>
       <S.Header>
@@ -28,7 +25,7 @@ const UserList = ({ users }: UsersProps) => {
       </S.Header>
 
       <div className="users">
-        {usersMock.map((user, index) => {
+        {users.map((user, index) => {
           return (
             <S.List key={user.id}>
               <span>{index + 1}</span>

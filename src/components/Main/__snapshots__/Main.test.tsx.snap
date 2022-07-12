@@ -6,13 +6,16 @@ exports[`Main component should render it correctly 1`] = `
   height: 100%;
   padding: 3rem;
   text-align: center;
+  background: url(https://image.com/example.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -21,16 +24,22 @@ exports[`Main component should render it correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: url(https://image.com/example.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  gap: 22px;
+  max-width: 1200px;
 }
 
 <main
   class="c0"
 >
-  <div
-    data-testid="Mock UserList"
-  />
+  <section
+    class="c1"
+  >
+    <div
+      data-testid="Mock UserList"
+    />
+    <div
+      data-testid="Mock UserProfile"
+    />
+  </section>
 </main>
 `

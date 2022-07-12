@@ -10,12 +10,16 @@ export const Wrapper = styled.main<WrapperProps>`
   padding: 3rem;
   text-align: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   background: url(${({ backgroundUrl }) => backgroundUrl});
   background-repeat: no-repeat;
   background-size: cover;
+`
+
+export const Container = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+
+  max-width: 1200px;
 `

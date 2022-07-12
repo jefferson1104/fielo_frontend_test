@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 
-import { usersMock } from './mock'
+import { usersMock } from './usersMock'
 
 import UserList from '.'
 

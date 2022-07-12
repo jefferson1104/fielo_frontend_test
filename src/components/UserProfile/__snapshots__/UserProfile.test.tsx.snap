@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfile component should render it correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 300px;
+  height: 386px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.c2 {
+  border-bottom: 1px solid #ddd;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.c1 img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.c1 h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16325c;
+}
+
+.c1 p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a94a6;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.c3 > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.c3 > div p {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  color: #16325c;
+}
+
+.c3 > div span {
+  font-size: 12px;
+  color: #8a94a6;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 > div {
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 > div h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #16325c;
+}
+
+.c4 > div p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b5bac8;
+}
+
+.c4 > div p span {
+  color: #16325c;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.c5 > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 input {
+  position: relative;
+  color: #1c8eff;
+}
+
+.c5 input:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: #b5bac8;
+  border-radius: 8px;
+  left: 15px;
+  top: 50%;
+}
+
+.c5 div:nth-child(2) input:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background: #b5bac8;
+  border-radius: 8px;
+  right: 15px;
+  top: 50%;
+}
+
+.c5 div:nth-child(3) input:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background: #b5bac8;
+  border-radius: 8px;
+  right: 15px;
+  top: 50%;
+}
+
+.c5 div:nth-child(4) input:after {
+  display: none;
+}
+
+.c5 div:nth-child(4) input:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background: #b5bac8;
+  border-radius: 8px;
+  right: 15px;
+  top: 50%;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Savannah Nguyen"
+      src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/1.jpg"
+    />
+    <h2>
+      Savannah Nguyen
+    </h2>
+    <p>
+      Sales Incentive Program Contribuitor
+    </p>
+  </div>
+  <div
+    class="c2"
+  />
+  <div
+    class="c3"
+  >
+    <div>
+      <p>
+        <svg
+          color="#1C8EFF"
+          fill="currentColor"
+          height="14"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(28, 142, 255);"
+          viewBox="0 0 512 512"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M321.7 21.36c-43.2 0-86.4 16.5-119.4 49.5-19.1 19.08-32.6 41.54-40.7 65.44 16.9-2.4 32.9-2.7 48.7-1.1 3.9-5.5 8.3-10.7 13.2-15.6 23.3-23.26 53.8-34.9 84.4-34.9 30.6 0 61.2 11.64 84.5 34.9 46.6 46.6 46.6 122.4 0 168.9-46.5 46.6-122.4 46.6-168.9 0-22.2-22.2-33.9-51.1-34.9-80.2-11.5 1.8-22.8 5.6-33.2 11.4 5.8 33 21.4 64.5 46.9 90 66 66 172.9 66.1 238.9 0 66-66 66-172.8 0-238.84-33-33-76.3-49.5-119.5-49.5zM147.6 158.2c-27.9 7.7-58.94 25.4-76.75 44-47.5 47.4-60.8 116-40.1 175.3 8.91 24.1 23.56 47.1 40.1 63.6 66.05 66 172.95 66 238.95 0 19.1-19.1 32.6-41.6 40.7-65.5-16.2 2.5-32.6 2.9-48.8 1.2-3.8 5.4-8.2 10.6-13.1 15.5-62.7 39.7-137.8 40.6-173.3-4.4-20.57-26-32.05-58.8-30.55-85.8 2.58-41.6 26.85-79.9 57.75-98.5 10.2-5.9 37.6-15.1 61.6-15.1 33.7 1.5 60.6 11.1 84.5 34.9 22.3 22.1 33.8 51.1 34.8 80.3 11.6-1.8 22.9-5.6 33.3-11.4-9.4-41.6-26.9-73.2-53.9-96.7-21.4-18.7-44.1-31.4-70.6-37.6-28.4-7-58.6-6.5-84.6.2z"
+          />
+        </svg>
+         
+        295
+      </p>
+      <span>
+        Points
+      </span>
+    </div>
+    <div>
+      <p>
+        168
+      </p>
+      <span>
+        Miles
+      </span>
+    </div>
+    <div>
+      <p>
+        <svg
+          color="#8A94A6"
+          fill="currentColor"
+          height="14"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(138, 148, 166);"
+          viewBox="0 0 288 512"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
+          />
+        </svg>
+        1094
+      </p>
+      <span>
+        Currency
+      </span>
+    </div>
+  </div>
+  <div
+    class="c2"
+  />
+  <div
+    class="c4"
+  >
+    <div>
+      <h3>
+        Bronze
+      </h3>
+      <p>
+        Next Tier 
+        <span>
+          Silver
+        </span>
+      </p>
+    </div>
+    <div
+      class="c5"
+    >
+      <div>
+        <input
+          readonly=""
+          type="radio"
+        />
+      </div>
+      <div>
+        <input
+          readonly=""
+          type="radio"
+        />
+      </div>
+      <div>
+        <input
+          readonly=""
+          type="radio"
+        />
+      </div>
+      <div>
+        <input
+          readonly=""
+          type="radio"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c2"
+  />
+</div>
+`

@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
 import UserList, { UsersProps } from '.'
-import { usersMock } from './mock'
+import { usersMock } from './usersMock'
 
 export default {
   title: 'UserList',
