@@ -10,4 +10,10 @@ export default {
   }
 } as Meta
 
-export const Basic: Story<UsersProps> = (args) => <UserList {...args} />
+export const Basic: Story<UsersProps> = (args) => (
+  <div
+    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+  >
+    <UserList {...args} />
+  </div>
+)

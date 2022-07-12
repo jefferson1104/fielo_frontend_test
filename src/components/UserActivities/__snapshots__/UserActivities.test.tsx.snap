@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserActivities component should render it correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
+  height: 386px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.c1 h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #16325c;
+}
+
+.c1 p {
+  font-weight: 600;
+  font-size: 13px;
+  color: #8a94a6;
+}
+
+.c2.activescroll {
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.c2.activescroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.c2.activescroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.c2.activescroll::-webkit-scrollbar-thumb {
+  background: #d7dbe7;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.c3 div span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #8a94a6;
+  margin-bottom: 5px;
+}
+
+.c3 div p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #16325c;
+}
+
+.c4 {
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
+  width: 100%;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h2>
+      Activity Feed
+    </h2>
+    <p>
+      Show Filters
+    </p>
+  </div>
+  <div
+    class="c2 activescroll"
+  >
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#1C8EFF"
+          fill="currentColor"
+          height="40"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(28, 142, 255);"
+          viewBox="0 0 24 24"
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 5c-3.859 0-7 3.141-7 7s3.141 7 7 7 7-3.141 7-7-3.141-7-7-7zm0 12c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
+          />
+          <path
+            d="M12 9c-1.627 0-3 1.373-3 3s1.373 3 3 3 3-1.373 3-3-1.373-3-3-3z"
+          />
+        </svg>
+        <div>
+          <span>
+            Saturday
+          </span>
+          <p>
+            Received 100 points for completing the Incentive Imperdiet senecctus sit.
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#4BCA8D"
+          fill="currentColor"
+          height="25"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(75, 202, 141);"
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h2v16h-2v-16z"
+          />
+          <path
+            d="M13 10.047c1.291 0 2.415-0.312 3-0.773v-8c-0.585 0.461-1.709 0.773-3 0.773s-2.415-0.312-3-0.773v8c0.585 0.461 1.709 0.773 3 0.773z"
+          />
+          <path
+            d="M9.5 0.508c-0.733-0.312-1.805-0.508-3-0.508-1.506 0-2.818 0.312-3.5 0.773v8c0.682-0.461 1.994-0.773 3.5-0.773 1.195 0 2.267 0.197 3 0.508v-8z"
+          />
+        </svg>
+        <div>
+          <span>
+            Thursday
+          </span>
+          <p>
+            Completed the Incetive Imperdiet senectus sit.
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#4BCA8D"
+          fill="currentColor"
+          height="20"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(75, 202, 141);"
+          viewBox="0 0 16 16"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+          />
+        </svg>
+        <div>
+          <span>
+            Tuesday
+          </span>
+          <p>
+            Completed the module Nibh quis massa.
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#F7A452"
+          fill="currentColor"
+          height="25"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(247, 164, 82);"
+          viewBox="0 0 1024 1024"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM540 701v53c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-53a48.01 48.01 0 1 1 56 0zm152-237H332V240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224z"
+          />
+        </svg>
+        <div>
+          <span>
+            Thursday
+          </span>
+          <p>
+            Redeemed New Roots Backpack for 100 points
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#F7A452"
+          fill="currentColor"
+          height="25"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(247, 164, 82);"
+          viewBox="0 0 1024 1024"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM540 701v53c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-53a48.01 48.01 0 1 1 56 0zm152-237H332V240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224z"
+          />
+        </svg>
+        <div>
+          <span>
+            Sunday
+          </span>
+          <p>
+            Redeemed New Roots Backpack for 600 points
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#F7A452"
+          fill="currentColor"
+          height="25"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(247, 164, 82);"
+          viewBox="0 0 1024 1024"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM540 701v53c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-53a48.01 48.01 0 1 1 56 0zm152-237H332V240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224z"
+          />
+        </svg>
+        <div>
+          <span>
+            Thursday
+          </span>
+          <p>
+            Redeemed New Roots Backpack for 80 points
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="#F7A452"
+          fill="currentColor"
+          height="25"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(247, 164, 82);"
+          viewBox="0 0 1024 1024"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM540 701v53c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-53a48.01 48.01 0 1 1 56 0zm152-237H332V240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224z"
+          />
+        </svg>
+        <div>
+          <span>
+            Sunday
+          </span>
+          <p>
+            Redeemed New Roots Backpack for 80 points
+          </p>
+        </div>
+      </div>
+      <div
+        class="c4"
+      />
+    </div>
+  </div>
+</div>
+`

@@ -12,5 +12,9 @@ export default {
 } as Meta
 
 export const Basic: Story<UserProfileProps> = (args) => (
-  <UserProfile {...args} />
+  <div
+    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+  >
+    <UserProfile {...args} />
+  </div>
 )
