@@ -33,6 +33,12 @@ export const Avatar = styled.div`
     border-radius: 50%;
   }
 
+  svg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
   h2 {
     font-size: 16px;
     font-weight: 700;

@@ -52,6 +52,12 @@ exports[`UserProfile component should render it correctly 1`] = `
   border-radius: 50%;
 }
 
+.c1 svg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
 .c1 h2 {
   font-size: 16px;
   font-weight: 700;
@@ -265,7 +271,7 @@ exports[`UserProfile component should render it correctly 1`] = `
       Savannah Nguyen
     </h2>
     <p>
-      Sales Incentive Program Contribuitor
+      Sales Incentive Program Contributor
     </p>
   </div>
   <div
@@ -338,12 +344,12 @@ exports[`UserProfile component should render it correctly 1`] = `
   >
     <div>
       <h3>
-        Bronze
+        Silver
       </h3>
       <p>
         Next Tier 
         <span>
-          Silver
+          Gold
         </span>
       </p>
     </div>

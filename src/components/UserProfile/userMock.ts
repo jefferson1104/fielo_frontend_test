@@ -7,5 +7,7 @@ export const userMock = {
     currency: 1094.2422842619271
   },
   image:
-    'https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/1.jpg'
+    'https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/1.jpg',
+  currentLevel: 'Silver',
+  program: 'Sales Incentive Program Contributor'
 }

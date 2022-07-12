@@ -6,9 +6,7 @@ import { userMock } from './userMock'
 
 describe('UserProfile component', () => {
   it('should render it correctly', () => {
-    const { container } = render(
-      <UserProfile userProfile={userMock} userLevel="Bronze" />
-    )
+    const { container } = render(<UserProfile userProfile={userMock} />)
 
     // avatar section
     const imageUser = screen.getByAltText(/Savannah Nguyen/i)
@@ -34,9 +32,9 @@ describe('UserProfile component', () => {
 
     // level section
     const currentLevel = screen.getByRole('heading', {
-      name: /bronze/i
+      name: /silver/i
     })
-    const nextLevel = screen.getByText(/silver/i)
+    const nextLevel = screen.getByText(/gold/i)
     const nextLevelLabel = screen.getByText(/next tier/i)
     const inputs = screen.getAllByRole('radio')
     expect(currentLevel).toBeInTheDocument()
@@ -45,5 +43,28 @@ describe('UserProfile component', () => {
     expect(inputs).toHaveLength(4)
 
     expect(container.firstChild).toMatchSnapshot()
+  })
+
+  it('should render with default avatar image', () => {
+    render(
+      <UserProfile
+        userProfile={{
+          id: 'a3276e5b-d846-435c-8a86-feb6189374b2',
+          name: 'Savannah Nguyen',
+          balance: {
+            points: 295,
+            miles: 168,
+            currency: 1094.2422842619271
+          },
+          image: '',
+          currentLevel: 'Silver',
+          program: 'Sales Incentive Program Contributor'
+        }}
+      />
+    )
+
+    const defaultAvatar = screen.getByTestId('default-avatar')
+
+    expect(defaultAvatar).toBeInTheDocument()
   })
 })

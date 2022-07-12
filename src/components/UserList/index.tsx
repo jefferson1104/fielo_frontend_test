@@ -1,21 +1,17 @@
+import { useRouter } from 'next/router'
+import { UserType } from 'types/propsTypes'
+
+import { BiUserCircle } from 'react-icons/bi'
+
 import * as S from './styles'
 
-type User = {
-  id: string
-  name: string
-  balance: {
-    points: number
-    miles: number
-    currency: number
-  }
-  image: string
-}
-
 export type UsersProps = {
-  users: Array<User>
+  users: Array<UserType>
 }
 
 const UserList = ({ users }: UsersProps) => {
+  const router = useRouter()
+
   return (
     <S.Wrapper>
       <S.Header>
@@ -27,13 +23,17 @@ const UserList = ({ users }: UsersProps) => {
       <div className="users">
         {users.map((user, index) => {
           return (
-            <S.List key={user.id}>
+            <S.List
+              key={user.id}
+              onClick={() => router.push(`/user/${user.id}`)}
+            >
               <span>{index + 1}</span>
               <div className="user-info">
-                <img
-                  src={user.image ? user.image : 'img/avatar_default.png'}
-                  alt={user.name}
-                />
+                {user.image ? (
+                  <img src={user.image} alt={user.name} />
+                ) : (
+                  <BiUserCircle data-testid="default-avatar" />
+                )}
                 <p>{user.name}</p>
               </div>
               <span>{user.balance.points}</span>

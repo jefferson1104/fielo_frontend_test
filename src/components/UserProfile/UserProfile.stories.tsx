@@ -6,8 +6,7 @@ export default {
   title: 'UserProfile',
   component: UserProfile,
   args: {
-    userProfile: userMock,
-    userLevel: 'Silver'
+    userProfile: userMock
   }
 } as Meta
 

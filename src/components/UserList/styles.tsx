@@ -86,6 +86,13 @@ export const List = styled.div`
       margin-right: 10px;
     }
 
+    svg {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
     > p {
       font-weight: 600;
       font-size: 13px;

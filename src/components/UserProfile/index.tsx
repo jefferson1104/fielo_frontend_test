@@ -1,46 +1,45 @@
-import * as S from './styles'
-import { GiLinkedRings } from 'react-icons/gi'
-import { FaDollarSign } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
 
-type User = {
-  id: string
-  name: string
-  balance: {
-    points: number
-    miles: number
-    currency: number
-  }
-  image: string
-}
+import { GiLinkedRings } from 'react-icons/gi'
+import { FaDollarSign } from 'react-icons/fa'
+import { BiUserCircle } from 'react-icons/bi'
+
+import { UserFormattedType } from 'types/propsTypes'
+
+import * as S from './styles'
 
 export type UserProfileProps = {
-  userProfile: User
-  userLevel: string
+  userProfile: UserFormattedType
 }
 
 const levels = ['Bronze', 'Silver', 'Gold', 'Platinum']
 
-const UserProfile = ({ userProfile, userLevel }: UserProfileProps) => {
+const UserProfile = ({ userProfile }: UserProfileProps) => {
   const [nextLevel, setNextLevel] = useState('')
   const [userCurrentlevel, setUserCurrentLevel] = useState('')
 
   useEffect(() => {
+    // verify and set next level
     levels.map((level, index, element) => {
-      if (level === userLevel) {
+      if (level === userProfile.currentLevel) {
         setNextLevel(element[index + 1])
       }
     })
 
-    setUserCurrentLevel(userLevel)
-  }, [userLevel])
+    // set current level
+    setUserCurrentLevel(userProfile.currentLevel)
+  }, [userProfile.currentLevel])
 
   return (
     <S.Wrapper>
       <S.Avatar>
-        <img src={userProfile.image} alt={userProfile.name} />
+        {userProfile.image ? (
+          <img src={userProfile.image} alt={userProfile.name} />
+        ) : (
+          <BiUserCircle data-testid="default-avatar" />
+        )}
         <h2>{userProfile.name}</h2>
-        <p>Sales Incentive Program Contribuitor</p>
+        <p>{userProfile.program}</p>
       </S.Avatar>
 
       <S.Divider />

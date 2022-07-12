@@ -12,6 +12,22 @@ const requestHeaders = (token: string) => {
 export const getUsers = (token: string) =>
   api.get(`${APP_URL}/users`, requestHeaders(token))
 
-export const User = {
-  getUsers
+export const getUser = (token: string, id: string) =>
+  api.get(`${APP_URL}/users/${id}`, requestHeaders(token))
+
+export const getActivities = (token: string, id: string) =>
+  api.get(`${APP_URL}/users/${id}/activities`, requestHeaders(token))
+
+export const getPrograms = (token: string, id: string) =>
+  api.get(`${APP_URL}/programs/${id}`, requestHeaders(token))
+
+export const getUserLevel = (token: string, id: string) =>
+  api.get(`${APP_URL}/programs/${id}/levels`, requestHeaders(token))
+
+export const Users = {
+  getUsers,
+  getUser,
+  getActivities,
+  getPrograms,
+  getUserLevel
 }

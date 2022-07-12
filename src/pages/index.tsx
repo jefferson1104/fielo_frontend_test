@@ -1,36 +1,49 @@
 import { GetStaticProps } from 'next'
+
 import { api } from 'utils/api'
 import { Auth } from 'services/auth'
-import { User } from 'services/user'
+import { Users } from 'services/user'
 
 import HomePage from 'templates/Home'
-import { UserType } from 'utils/types'
+import { UserType } from 'types/propsTypes'
 
 type HomeProps = {
-  image: string
+  background: string
   users: Array<UserType>
 }
 
-const Home = ({ image, users }: HomeProps) => {
-  return <HomePage background={image} users={users} />
+const Home = ({ background, users }: HomeProps) => {
+  return <HomePage background={background} users={users} />
 }
 
 export const getStaticProps: GetStaticProps = async () => {
   // bing images
-  const bingData = await api.get('/api/bing')
-  const image = JSON.stringify(bingData.data.background)
+  const bingImage = await api.get('/api/bing')
+  const background = JSON.stringify(bingImage.data.background)
 
   // get token
   const reqAuth = await Auth.getToken()
   const token = reqAuth.data.token
 
   // get users
-  const response = await User.getUsers(token)
-  const users = response.data ? response.data : []
+  const response = await Users.getUsers(token)
+  const data = response.data as Array<UserType>
+
+  // verify users data and ordened by points
+  const users = data
+    ? data.sort((a, b) => {
+        if (a.balance.points > b.balance.points) {
+          return -1
+        } else {
+          return 0
+        }
+      })
+    : []
 
   return {
+    revalidate: 60,
     props: {
-      image,
+      background,
       users
     }
   }

@@ -1,7 +1,7 @@
 import Header from 'components/Header'
 import Main from 'components/Main'
 import UserList from 'components/UserList'
-import { UserType } from 'utils/types'
+import { UserType } from 'types/propsTypes'
 
 type HomePageTemplateProps = {
   background: string
