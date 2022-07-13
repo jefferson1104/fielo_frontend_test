@@ -2,14 +2,10 @@ import { render, screen } from '@testing-library/react'
 
 import Main from '.'
 
-const mockProps = {
-  background: 'https://image.com/example.png'
-}
-
 describe('Main component', () => {
   it('should render it correctly', () => {
     const { container } = render(
-      <Main background={mockProps.background}>
+      <Main background={'http://image-bg.com/example.png'}>
         <h1>Main component</h1>
       </Main>
     )
@@ -18,9 +14,9 @@ describe('Main component', () => {
       screen.getByRole('heading', { name: /main component/i })
     ).toBeInTheDocument()
 
-    expect(container.firstChild).toHaveStyle({
-      background: `url(${mockProps.background})`
-    })
+    expect(screen.getByRole('main')).toHaveStyle(
+      'background-image: url(http://image-bg.com/example.png)'
+    )
 
     expect(container.firstChild).toMatchSnapshot()
   })

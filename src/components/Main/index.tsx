@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import * as S from './styles'
 
-type MainProps = {
+export type MainProps = {
   background: string
   children: ReactNode
 }

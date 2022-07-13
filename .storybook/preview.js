@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import GlobalStyles from '../src/styles/global'
 
 export const parameters = {
@@ -18,9 +19,9 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <>
+    <Fragment>
       <GlobalStyles />
       <Story />
-    </>
+    </Fragment>
   )
 ]

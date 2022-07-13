@@ -1,5 +1,4 @@
 import { api } from '../utils/api'
-import { APP_URL } from './constants'
 
 const requestHeaders = (token: string) => {
   return {
@@ -9,20 +8,27 @@ const requestHeaders = (token: string) => {
   }
 }
 
+const API_URL = process.env.FIELO_API_URL
+
+// request to get all users
 export const getUsers = (token: string) =>
-  api.get(`${APP_URL}/users`, requestHeaders(token))
+  api.get(`${API_URL}/users`, requestHeaders(token))
 
+// request to get specify user, using id with the param
 export const getUser = (token: string, id: string) =>
-  api.get(`${APP_URL}/users/${id}`, requestHeaders(token))
+  api.get(`${API_URL}/users/${id}`, requestHeaders(token))
 
+// request to get the activities of a specific user
 export const getActivities = (token: string, id: string) =>
-  api.get(`${APP_URL}/users/${id}/activities`, requestHeaders(token))
+  api.get(`${API_URL}/users/${id}/activities`, requestHeaders(token))
 
+// request to get program data using specific program id
 export const getPrograms = (token: string, id: string) =>
-  api.get(`${APP_URL}/programs/${id}`, requestHeaders(token))
+  api.get(`${API_URL}/programs/${id}`, requestHeaders(token))
 
+// request to get the user level using specific user
 export const getUserLevel = (token: string, id: string) =>
-  api.get(`${APP_URL}/programs/${id}/levels`, requestHeaders(token))
+  api.get(`${API_URL}/levels/${id}`, requestHeaders(token))
 
 export const Users = {
   getUsers,

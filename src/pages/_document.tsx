@@ -1,3 +1,5 @@
+import { Fragment } from 'react'
+
 import Document, {
   DocumentContext,
   Html,
@@ -5,6 +7,7 @@ import Document, {
   Main,
   NextScript
 } from 'next/document'
+
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -23,10 +26,10 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <>
+          <Fragment>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>
+          </Fragment>
         )
       }
     } finally {

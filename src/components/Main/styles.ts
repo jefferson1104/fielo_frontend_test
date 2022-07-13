@@ -5,8 +5,9 @@ type WrapperProps = {
 }
 
 export const Wrapper = styled.main<WrapperProps>`
-  height: 100vh;
-  background: url(${({ backgroundUrl }) => backgroundUrl});
+  height: calc(100vh - 84px);
+
+  background-image: url(${({ backgroundUrl }) => backgroundUrl});
   background-repeat: no-repeat;
   background-size: cover;
 `
@@ -16,7 +17,15 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
-  gap: 22px;
+  gap: 30px;
   padding: 100px 0;
-  max-width: 1200px;
+
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222f3e;
+  }
 `

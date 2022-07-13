@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Header from 'components/Header'
 import Main from 'components/Main'
 
@@ -20,16 +21,15 @@ const UserPage = ({
   user,
   activities
 }: UserPageTemplateProps) => {
-  console.log('ACTIVITIES =>', activities)
   return (
-    <>
+    <Fragment>
       <Header />
       <Main background={background}>
         <UserList users={users} />
         <UserProfile userProfile={user} />
         <UserActivities userActivities={activities} />
       </Main>
-    </>
+    </Fragment>
   )
 }
 
